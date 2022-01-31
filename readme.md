@@ -5,34 +5,7 @@ GreaseTerminator is an active, non-invasive intervention tool to patch dark patt
 #### Deployment
 1. Run server `python server.py` (Evaluate small-scale deployment with ngrok: `ngrok http 5000`).
 2. Run interventions processing `python vision.py`.
-3. Install [GreaseTerminator app on Android](), connect via ADB (wireless/wired), set server address in-app.
-
-
-```
-Changelog:
-27-02-2021
-Real-time video modification (e.g. obscenity censoring)
-De-metrification of Instagram, Twitter, Facebook
-Test stories bar removal across several apps
-Test text censoring in images
-
-24-02-2021
-Screen darkening (for scroll lock / time lock)
-
-23-02-2021
-Hate speech detection & text censoring
-Fixed resizing issue with respect to status/navigation bar
-Consistent one-shot detection and removal of interface interferences (e.g. stories bar)
-
-29-01-2021
-Single shot image inpainting to remove interface interferences
-
-25-01-2021
-Text-based intervention (censor band, blacklist)
-Screen relay service (flask, ngrok)
-Overlap service running to render interventions; app compiled to .apk
-		
-```
+3. Install [GreaseTerminator app on Android](https://github.com/greaseuniverse/greaseterminator/releases/download/public-v1/com.oxfordhcc.greaseterminator.apk), connect via ADB (wireless/wired), set server address in-app.
 
 #### Screenshots {Before, After}
 
@@ -80,5 +53,31 @@ Overlap service running to render interventions; app compiled to .apk
 <img src="docs/darkening_3.png?raw=true" height="300px"></img>
 <img src="docs/darkening_4.png?raw=true" height="300px"></img>
 
+
+```
+Changelog:
+27-02-2021
+Real-time video modification (e.g. obscenity censoring)
+De-metrification of Instagram, Twitter, Facebook
+Test stories bar removal across several apps
+Test text censoring in images
+
+24-02-2021
+Screen darkening (for scroll lock / time lock)
+
+23-02-2021
+Hate speech detection & text censoring
+Fixed resizing issue with respect to status/navigation bar
+Consistent one-shot detection and removal of interface interferences (e.g. stories bar)
+
+29-01-2021
+Single shot image inpainting to remove interface interferences
+
+25-01-2021
+Text-based intervention (censor band, blacklist)
+Screen relay service (flask, ngrok)
+Overlap service running to render interventions; app compiled to .apk
+		
+```
 
 
